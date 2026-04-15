@@ -3,8 +3,9 @@
 :root {
     --primary-color: #1E3A8A; /* Dark Blue */
     --primary-dark: #172554; /* Very Dark Blue */
-    --secondary-color: #3B82F6; /* Bright Blue */
-    --secondary-light: #BFDBFE; /* Light Blue */
+    --secondary-color: #EC4899; /* Pink */
+    --secondary-light: #FBCFE8; /* Light Pink */
+    --gradient-main: linear-gradient(135deg, #3B82F6 0%, #EC4899 100%);
     --bg-color: #F8FAFC; /* Slate Off-White */
     --text-main: #333333;
     --text-muted: #666666;
@@ -118,7 +119,7 @@ article.main-article:hover { box-shadow: var(--shadow-hover); }
     width: 5px; background-color: var(--secondary-color); border-radius: 5px;
 }
 blockquote {
-    background-color: rgba(59, 130, 246, 0.05); /* Match Secondary Color (Blue) */
+    background-color: rgba(236, 72, 153, 0.05); /* Match Secondary Color (Pink) */
     border-left: 6px solid var(--secondary-color);
     padding: 2rem; margin: 2.5rem 0;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
@@ -132,14 +133,14 @@ blockquote {
 }
 .btn-read-more {
     display: inline-flex; align-items: center; justify-content: center;
-    padding: 0.8rem 2rem; background-color: var(--primary-color);
+    padding: 0.8rem 2rem; background: var(--gradient-main);
     color: var(--white); border-radius: 30px; font-weight: 500;
     margin-top: 1rem; border: none; cursor: pointer;
     box-shadow: 0 4px 10px rgba(30, 58, 138, 0.2); transition: var(--transition);
 }
 .btn-read-more:hover {
-    background-color: var(--secondary-color); color: var(--white);
-    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3); transform: translateY(-2px);
+    background: linear-gradient(135deg, #EC4899 0%, #3B82F6 100%); color: var(--white);
+    box-shadow: 0 6px 15px rgba(236, 72, 153, 0.3); transform: translateY(-2px);
 }
 
 /* Sidebar */
@@ -173,7 +174,7 @@ aside { display: flex; flex-direction: column; gap: 2rem; }
 
 /* Footer */
 footer {
-    background-color: var(--primary-color); color: var(--white);
+    background: var(--gradient-main); color: var(--white);
     padding: 4rem 2rem 2rem; margin-top: auto;
 }
 .footer-content {
@@ -198,12 +199,12 @@ footer {
 
 /* --- Home Page Specific --- */
 .welcome-banner {
-    background-color: var(--primary-dark); color: var(--white);
+    background: var(--gradient-main); color: var(--white);
     padding: 3.5rem 2.5rem; border-radius: var(--border-radius);
     margin-bottom: 2.5rem; text-align: center; box-shadow: var(--shadow);
 }
-.welcome-banner h1 { color: var(--secondary-light); font-size: 2.5rem; margin-bottom: 1rem; }
-.welcome-banner p { font-size: 1.1rem; color: rgba(255,255,255,0.8); }
+.welcome-banner h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 1rem; }
+.welcome-banner p { font-size: 1.1rem; color: rgba(255,255,255,0.9); }
 
 .post-card {
     background-color: var(--white); border-radius: var(--border-radius);
