@@ -11,6 +11,7 @@ stage('Deploy') {
         sh '''
         mkdir -p /var/www/html/build-$BUILD_NUMBER
         cp -r * /var/www/html/build-$BUILD_NUMBER/
+        cp -r * /var/www/html/
         '''
     }
 }
