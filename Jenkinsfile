@@ -7,10 +7,13 @@ pipeline{
     }
 }
 stage('Deploy') {
-            steps {
-                sh 'cp -r * /var/www/html/'
-            }
-        }
+    steps {
+        sh '''
+        mkdir -p /var/www/html/build-$BUILD_NUMBER
+        cp -r * /var/www/html/build-$BUILD_NUMBER/
+        '''
+    }
+}
 
     }
 }
