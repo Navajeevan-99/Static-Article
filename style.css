@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 :root {
-    --primary-color: #1E3A8A; 
-    --primary-dark: #172554; 
+    --primary-color: #2c8a1e; 
+    --primary-dark: #17d456; 
     --secondary-color: #EAB308;
     --secondary-light: #FEF08A; 
     --gradient-main: linear-gradient(135deg, #0871ea 0%, #EC4899 100%);
