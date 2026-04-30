@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 :root {
-    --primary-color: #2c8a1e; 
-    --primary-dark: #17d456; 
-    --secondary-color: #EAB308;
-    --secondary-light: #FEF08A; 
+    --primary-color: #291e8a; 
+    --primary-dark: #4317d4; 
+    --secondary-color: #ea0888;
+    --secondary-light: #fe8aad; 
     --gradient-main: linear-gradient(135deg, #0871ea 0%, #EC4899 100%);
     --bg-color: #F8FAFC; 
     --text-main: #333333;
